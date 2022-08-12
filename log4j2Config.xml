@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+	<Appenders>
+		<RollingFile name="fileLogger"
+			fileName="Logs/log-info.log"
+			filePattern="Logs/app-info-%d{yyyy-MM-dd}.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="debug" additivity="true">
+			<appender-ref ref="Console" level="debug"/>
+			<appender-ref ref="fileLogger" level="debug"/>
+		</Root>
+	</Loggers>
+</Configuration>

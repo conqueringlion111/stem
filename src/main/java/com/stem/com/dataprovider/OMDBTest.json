@@ -1,0 +1,30 @@
+{
+	"searchItems" : 
+	[
+		{
+			"searchparam" 	: "s",
+			"searchStr" 	: "stem",
+			"titleOne"		: "The STEM Journals",
+			"titleTwo"		: "Activision: STEM - in the Videogame Industry"
+		}
+ 	],
+ 	"getIMDBDetails" :
+ 	[
+ 		{
+ 			"searchparam" 	: "s",
+ 			"searchStr" 	: "stem",
+ 			"searchTitle"	: "Activision: STEM - in the Videogame Industry",
+ 			"expectOne"		: "23 Nov 2010",
+ 			"expectTwo"		: "Mike Feurstein"
+ 		}
+ 	],
+ 	"getItemByTitle" :
+ 	[
+ 		{
+ 			"searchparam" 	: "t",
+ 			"title"		 	: "The STEM Journals",
+ 			"expectOne"		: "Science, Technology, Engineering and Math",
+ 			"expectTwo"		: "22 min"
+ 		}
+ 	]
+}

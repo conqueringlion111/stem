@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" parallel="methods" thread-count="3">
+    <test name = "regression">
+        <groups>
+            <define name="regression">
+                <include name = "omdb"/>
+            </define>
+        </groups>
+        <packages>
+            <package name="com.stem.com.test"/>
+        </packages>
+    </test>
+</suite>

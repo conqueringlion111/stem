@@ -1,0 +1,11 @@
+*target/
+*test-output/
+*.settings
+*.png
+*debug.log
+*.project
+*.classpath
+/bin
+/Logs
+*.idea/
+*.iml
